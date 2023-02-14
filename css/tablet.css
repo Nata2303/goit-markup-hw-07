@@ -1,0 +1,74 @@
+@media screen and (min-width: 768px) {
+    .container {
+  max-width: 736px;
+    }
+  .hero-container {
+    max-width: 100%;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero_people-office_tablet.jpg);
+    max-width: 768px;
+    min-height: 436px;
+    padding-top: 111px;
+    padding-bottom: 108px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0000);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+  .section-conteiner {
+    display: flex;
+    justify-content: center;
+  }
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100%-1 * 24px) / 2);
+    row-gap: 72px;
+    justify-content: center;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  .about-titel {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 8px;
+  }
+  .about-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--titel-brand-color--);
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-basis: calc((100%-1 * 24px) / 2);
+    row-gap: 72px;
+    justify-content: center;
+    gap: 24px;
+  }
+}

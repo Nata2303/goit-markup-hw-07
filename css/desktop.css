@@ -1,0 +1,21 @@
+    @media screen and(min-width: 1200px) {
+        .container {
+  max-width: 1168px;
+    }
+      .hero-container {
+    max-width: 100%;
+  }
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero_people-office.jpg);
+    max-width: 1200px;
+    min-height: 436px;
+    padding-top: 111px;
+    padding-bottom: 108px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+    }
