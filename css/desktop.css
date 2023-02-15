@@ -1,8 +1,8 @@
-    @media screen and(min-width: 1200px) {
-        .container {
-  max-width: 1168px;
-    }
-      .hero-container {
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1168px;
+  }
+  .hero-container {
     max-width: 100%;
   }
   .hero {
@@ -12,10 +12,45 @@
       ),
       url(../images/hero_people-office.jpg);
     max-width: 1200px;
-    min-height: 436px;
     padding-top: 111px;
     padding-bottom: 108px;
     padding-left: 0px;
     padding-right: 0px;
   }
-    }
+  }
+.about-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-basis: 100%;
+  justify-content: center;
+  gap: 24px;
+  margin: 0;
+  padding: 0;
+}
+
+.section-services {
+  padding-top: 0px;
+}
+.services {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  margin-top: 0;
+}
+.services-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+@media screen and (max-width: 1200px) {
+  .section-services {
+    max-width: 100%;
+    display: none;
+  }
+  
+}
