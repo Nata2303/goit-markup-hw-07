@@ -24,10 +24,14 @@ body {
 }
 .container {
   max-width: 320px;
-  padding-left: 16px;
+  /* padding-left: 16px;
   padding-right: 16px;
-  margin: 0 auto;
+  margin: 0 auto; */
 }
+.no-scroll {
+  overflow: hidden;
+}
+
 .mini-container {
   max-width: 480px;
 }
@@ -64,86 +68,151 @@ header {
   padding-bottom: 24px;
   height: 72px;
 }
-.heder-container {
-  display: flex;
-  align-items: center;
-  margin: 0;
-  border: 0;
+.flex{
+    display: flex;
+    justify-content: flex-start;
 }
-.heder-item {
-  font-family: inherit;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1, 5;
-  letter-spacing: 0.02em;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  color: var(--menu-brand-color--);
-  margin: 0;
-  border: 0;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--transition-timing-function--);
-}
-.heder-item:hover,
-.heder-item:focus {
-  color: #404bbf;
-}
-.heder-flex {
-  padding-top: 24px;
-  padding-bottom: 24px;
-  height: 72px;
+.heder-container{
+display: none;
 }
 .heder-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  gap: 40px;
-  align-items: center;
+  display: none;
+  
 }
-.contakt {
+.contakt-list{
+    display: none;
+}
+.mob-menu-open {
+  display: flex;
+  border: 4px solid red;
+  background-color: transparent;
   margin-left: auto;
-}
-.contakt-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
-  gap: 40px;
+  justify-content: center;
 }
-.contakt-item {
-  border: 0px;
-  font-family: inherit;
-  font-size: 16px;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--menu-brand-color--);
-  padding-top: 24px;
-  padding-bottom: 24px;
-  margin-top: 0;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--transition-timing-function--);
+.menu-open-icon {
+  stroke: var(--menu-brand-color--);
+}
+.btn-mob-menu-close{
+    margin-left: 296px;
+    border-radius: 50%;
+    background: #E7E9FC;
+border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.btn-mob-menu-close:is(:hover,:focus) {
+    background-color: var(--aktiv-heder--)
+}
+.mob-menu-wrap {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background-color: var(--btn-brand-color--);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
-.contakt-item:hover,
-.contakt-item:focus {
-  color: #404bbf;
+.menu-container {
+  max-width: 320px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
-.current {
-  position: relative;
+
+.mob-menu-wrap > .menu-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* overflow-y: auto; */
 }
-.current::after {
-  content: "";
-  position: absolute;
+
+.mob-menu-nav {
+  padding-top: 16px;
+  
+}
+
+.mob-menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: var(--subtitle-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-menu-link:is(:hover, :focus) {
+  color: var(--aktiv-heder--);
+}
+
+.mob-menu-address {
+  font-style: normal;
+  margin-bottom: 48px;
+}
+
+.mob-menu-address-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.mob-menu-address-item > a:is(:hover, :focus) {
+  color: var(--aktiv-heder--);
+}
+
+.mob-menu-link-address {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--titel-brand-color--);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 48px;
+}
+
+.mob-menu-tel {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.1;
+  color: var(--titel-brand-color--);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-bottom: 40px;
+}
+
+.mob-soc-list {
+  display: flex;
+  gap: 56px;
+}
+.menu-open-icon{
+    fill:var(--titel-brand-color--)
+}
+.mob-soc-item {
+  width: 40px;
+  height: 40px;
+}
+
+.mob-soc-link {
   width: 100%;
-  height: 4px;
-  border-radius: 2px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--primary-brand-color--);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-soc-link:is(:hover, :focus) {
   background-color: var(--aktiv-heder--);
-  left: 0;
-  bottom: -31px;
+}
+
+.mob-soc-icon {
+  fill: var(--btn-brand-color--);
 }
 /*section 1*/
 .hero {
@@ -163,6 +232,16 @@ header {
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ), url(../images/hero_people-office_mobile-2x.jpg);
+  }
 }
 .hero-container {
   max-width: 100%;
@@ -223,25 +302,16 @@ header {
   clip-path: inset(50%);
   margin: -1px;
 }
-.section-conteiner {
-  display: flex;
-  justify-content: center;
-}
-.about-list {
-  display: flex;
-  flex-wrap: wrap;
-  flex-basis: none;
-  justify-content: center;
-  text-align: center;
-  gap: 72px;
-  margin: 0;
-  padding: 0;
-}
+
+.about-item {
+  width: 100%;
+} 
 .about-titel {
   font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-align: center;
   margin: 0;
   padding: 0;
   border: 0;
@@ -250,8 +320,10 @@ header {
 .about-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: justify;
   color: var(--titel-brand-color--);
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
   border: 0;
 }
@@ -292,7 +364,7 @@ header {
 .conteiner_team {
   padding-left: 0px;
   padding-right: 0px;
-  max-width: 480px;
+  max-width: 320px;
 }
 .team {
   font-weight: 700;
@@ -387,10 +459,10 @@ header {
 .customers-item {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   flex-basis: calc((100%-1 * 16px) / 2);
   column-gap: 16px;
   row-gap: 72px;
-  flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   margin-bottom: 72px;
@@ -890,4 +962,10 @@ header {
 }
 .btn-form:is(:hover, :focus) {
   background-color: var(--aktiv-heder--);
+}
+@media screen and (max-width: 1200px) {
+  .section-services {
+    max-width: 100%;
+    display: none;
+  }
 }

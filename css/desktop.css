@@ -2,6 +2,7 @@
   .container {
     max-width: 1168px;
   }
+  
   .hero-container {
     max-width: 100%;
   }
@@ -17,18 +18,7 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  }
-.about-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-basis: 100%;
-  justify-content: center;
-  gap: 24px;
-  margin: 0;
-  padding: 0;
-}
-
+  
 .section-services {
   padding-top: 0px;
 }
@@ -47,10 +37,23 @@
   justify-content: center;
   gap: 24px;
 }
-@media screen and (max-width: 1200px) {
-  .section-services {
-    max-width: 100%;
-    display: none;
-  }
-  
+
+.container-footer {
+  width: 100%;
+  flex-wrap: nowrap;
+  row-gap: none;
+  gap: 80px;
+}
+.footer-conteiner{
+  margin-right: 40px;
+}
+.subscribe{
+  width: 453px;
+}
+.titel-subscribe {
+  margin-bottom: 16px;
+}
+.subscribe-wrap {
+  flex-wrap: nowrap;
+}
 }

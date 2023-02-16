@@ -3,6 +3,93 @@
     max-width: 736px;
   }
   .mini-container {
+    max-width: 736px;
+  }
+  .heder-container {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    border: 0;
+  }
+  .heder-item {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1, 5;
+    letter-spacing: 0.02em;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: var(--menu-brand-color--);
+    margin: 0;
+    border: 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function--);
+  }
+  .heder-item:hover,
+  .heder-item:focus {
+    color: #404bbf;
+  }
+  .heder-flex {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    height: 72px;
+  }
+  .heder-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+    align-items: center;
+  }
+  .contakt-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 40px;
+  }
+  .contakt {
+    margin-left: auto;
+  }
+  .contakt-list {
+    display: none;
+  }
+  .contakt-item {
+    border: 0px;
+    font-family: inherit;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--menu-brand-color--);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-top: 0;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--transition-timing-function--);
+  }
+
+  .contakt-item:hover,
+  .contakt-item:focus {
+    color: #404bbf;
+  }
+  .current {
+    position: relative;
+  }
+  .current::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--aktiv-heder--);
+    left: 0;
+    bottom: -31px;
+  }
+  .mini-container {
     max-width: 768px;
   }
   .hero-container {
@@ -13,7 +100,7 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/hero_people-office_tablet.jpg);
+      url(../images/hero_people-office.jpg);
     max-width: 768px;
     min-height: 436px;
     padding-top: 111px;
@@ -21,29 +108,31 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  .section-conteiner {
-    width: 100%;
-    flex-wrap: wrap;
-     
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero_people-office_tablet-2x.jpg);
+    }
   }
-  .about-list {
-   row-gap: 72px;
-    flex-basis: calc((100%-24px) / 2);
-    gap: 24px;
-    width: 736px;
-    padding-left: 16px;
-    padding-right: 16px;
+  .about-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: calc((100%-24px) / 2);
   }
   .team-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-flow: calc((100% -24px) / 2);
-    row-gap: 72px;
-    gap: 24px;
+    flex-direction: row;
+    flex-basis: calc((100% -24px) / 2);
+    column-gap: 24px;
   }
+
   .customers-item {
-    flex-flow: calc((100%-32px) / 3);
+    flex-basis: calc((100%-2 * 16px) / 3);
   }
   .container-footer {
     width: 552px;
@@ -53,18 +142,18 @@
     text-align: start;
   }
   .footer-text {
-  text-align: start;
-}
-.footer-social-conteiner {
-  text-align: start;
-}
-.titel-subscribe{
     text-align: start;
-}
-.subscribe-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  gap: 24px;
-}
+  }
+  .footer-social-conteiner {
+    text-align: start;
+  }
+  .titel-subscribe {
+    text-align: start;
+  }
+  .subscribe-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 24px;
+  }
 }
