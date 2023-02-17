@@ -1,11 +1,13 @@
-@media screen and(min-width: 480px) {
+@media screen and (min-width: 480px) {
   .container {
     max-width: 468px;
   }
+    .container.flex{
+      max-width: 480px;
+    }
   .flex{
     display: flex;
-    margin-left: auto;
-    max-width: 100%;
+   
 }
 .heder-container{
         display: flex;
@@ -14,8 +16,6 @@
         border: 0;
       }
 .mob-menu-open {
-justify-content: flex-end;
-  margin-left: auto;
   margin-left: auto;
 }
   .hero-container {

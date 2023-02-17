@@ -2,7 +2,36 @@
   .container {
     max-width: 1168px;
   }
-  
+  .mini-container {
+    max-width: 1168px;
+  }
+  .container.flex {
+    max-width: 1168px;
+  }
+  .section {
+    padding: 120px 0;
+  }
+  .logo{
+    margin-right: 76px;
+      }
+      .heder-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 40px;
+        align-items: center;
+      }
+      .contakt{
+        margin-left: auto;
+      }
+      .contakt-list {
+        display: flex;
+        flex-direction: none;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 40px;
+        justify-content: flex-end;
+      }
   .hero-container {
     max-width: 100%;
   }
@@ -12,13 +41,54 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero_people-office.jpg);
-    max-width: 1200px;
-    padding-top: 111px;
-    padding-bottom: 108px;
+    max-width: 100%;
+    padding-top: 187px;
+    padding-bottom: 292px;
     padding-left: 0px;
     padding-right: 0px;
   }
-  
+  .hero-titel {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    color: var(--btn-brand-color--);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 496px;
+    margin-bottom: 48px;
+    margin-top: 0;
+  }
+  .about-list{
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.about-titel {
+  font-size: 20px;
+  line-height: 1.2;
+}
+.about-item:before {
+  display: block;
+  content: "";
+  height: 112px;
+  background-size: 64px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: var(--background-color--);
+  margin-bottom: 8px;
+}
+.icon-antena:before {
+  background-image: url(../images/antenna.svg);
+}
+.icon-clok::before {
+  background-image: url(../images/clock.svg);
+}
+.icon-diagram:before {
+  background-image: url(../images/diagram.svg);
+}
+.icon-astronaut:before {
+  background-image: url(../images/astronaut.svg);
+}
 .section-services {
   padding-top: 0px;
 }
@@ -38,6 +108,10 @@
   gap: 24px;
 }
 
+.customers-item {
+  flex-wrap: nowrap;
+  margin-bottom: 0px;
+}
 .container-footer {
   width: 100%;
   flex-wrap: nowrap;

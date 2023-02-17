@@ -2,6 +2,9 @@
   .container {
     max-width: 736px;
   }
+  .container.flex {
+    max-width: 736px;
+  }
   .mini-container {
     max-width: 736px;
   }
@@ -10,6 +13,10 @@
     align-items: center;
     margin: 0;
     border: 0;
+  }
+  .mob-menu-open {
+    display: none;
+    
   }
   .heder-item {
     font-family: inherit;
@@ -31,7 +38,12 @@
   .heder-item:focus {
     color: #404bbf;
   }
+  .logo{
+margin-right: 120px;
+  }
   .heder-flex {
+    display: flex;
+    justify-content: center;
     padding-top: 24px;
     padding-bottom: 24px;
     height: 72px;
@@ -42,20 +54,15 @@
     justify-content: flex-start;
     gap: 40px;
     align-items: center;
+    margin-right: 100px;
   }
   .contakt-list {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: center;
-    gap: 40px;
   }
-  .contakt {
-    margin-left: auto;
-  }
-  .contakt-list {
-    display: none;
-  }
+
   .contakt-item {
     border: 0px;
     font-family: inherit;
@@ -90,7 +97,7 @@
     bottom: -31px;
   }
   .mini-container {
-    max-width: 768px;
+    max-width: 552px;
   }
   .hero-container {
     max-width: 100%;
@@ -101,7 +108,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero_people-office.jpg);
-    max-width: 768px;
+    max-width: 100%;
     min-height: 436px;
     padding-top: 111px;
     padding-bottom: 108px;
@@ -139,12 +146,11 @@ row-gap: 72px;
     text-align: start;
   }
   .team-list {
-    /* flex-direction: row;
+    flex-direction: row;
     flex-basis: calc((100% -24px) / 2);
-    column-gap: 24px; */
+    column-gap: 24px;
   }
-
-  .customers-item {
+  .customers-list{
     flex-basis: calc((100% - 2 * 16px) / 3);
   }
   .container-footer {

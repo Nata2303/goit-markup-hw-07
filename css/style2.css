@@ -63,14 +63,13 @@ header {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--menu-brand-color--);
-  /* margin-right: 74px; */
   padding-top: 24px;
   padding-bottom: 24px;
+  padding-left: 16px;
   height: 72px;
 }
 .flex{
     display: flex;
-    
 }
 .heder-container{
         display: flex;
@@ -91,9 +90,8 @@ header {
 }
 .mob-menu-open {
   display: flex;
-  border: 4px solid red;
+  border: none;
   background-color: transparent;
-  margin-left: auto;
   margin-left: auto;
 }
 .menu-open-icon {
@@ -103,7 +101,6 @@ header {
     margin-left: 296px;
     border-radius: 50%;
     background: #E7E9FC;
-border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .btn-mob-menu-close:is(:hover,:focus) {
     background-color: var(--aktiv-heder--)
@@ -129,7 +126,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   max-width: 320px;
   height: 100%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: 0;
   
 }
 
@@ -138,7 +135,7 @@ border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* overflow-y: auto; */
+  overflow-y: auto;
 }
 
 .mob-menu-nav {
@@ -484,7 +481,7 @@ margin-bottom: 0px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-basis: calc((100%-1 * 16px) / 2);
+  flex-basis: calc((100% - 1 * 16px) / 2);
   column-gap: 16px;
   row-gap: 72px;
   justify-content: center;
