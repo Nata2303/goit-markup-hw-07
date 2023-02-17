@@ -119,30 +119,48 @@
         url(../images/hero_people-office_tablet-2x.jpg);
     }
   }
-  .about-item {
+  .about-list{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: calc((100%-24px) / 2);
+    flex-direction: row;
+column-gap: 24px;
+row-gap: 72px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.about-list:last-child{
+    row-gap: none;
+}
+  .about-item {
+    width: calc((100% - 24px)/2);
+    margin-bottom: 0px;
+  }
+  .about-titel {
+    text-align: start;
   }
   .team-list {
-    flex-direction: row;
+    /* flex-direction: row;
     flex-basis: calc((100% -24px) / 2);
-    column-gap: 24px;
+    column-gap: 24px; */
   }
 
   .customers-item {
-    flex-basis: calc((100%-2 * 16px) / 3);
+    flex-basis: calc((100% - 2 * 16px) / 3);
   }
   .container-footer {
     width: 552px;
-    flex-basis: calc((100%-2 * 16px) / 3);
+    flex-basis: calc((100% - 2 * 16px) / 3);
     gap: 24px;
     justify-content: flex-start;
     text-align: start;
   }
+  .footer{
+    display: block;
+    padding-left: 108px;
+  }
   .footer-text {
     text-align: start;
+    margin-bottom: 72px;
   }
   .footer-social-conteiner {
     text-align: start;

@@ -2,6 +2,22 @@
   .container {
     max-width: 468px;
   }
+  .flex{
+    display: flex;
+    margin-left: auto;
+    max-width: 100%;
+}
+.heder-container{
+        display: flex;
+        align-items: center;
+        margin: 0;
+        border: 0;
+      }
+.mob-menu-open {
+justify-content: flex-end;
+  margin-left: auto;
+  margin-left: auto;
+}
   .hero-container {
     max-width: 100%;
   }
@@ -21,6 +37,9 @@
         rgba(46, 47, 66, 0.7)
       ), url(../images/hero_people-office_mobile-2x.jpg);
   }
+}
+.conteiner_team {
+  max-width: 480px;
 }
   .team-list {
     display: flex;
