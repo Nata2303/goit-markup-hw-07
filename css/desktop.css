@@ -48,7 +48,7 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero_people-office.jpg);
-    max-width: 100%;
+    max-width: 1440px;
     padding-top: 187px;
     padding-bottom: 188px;
     padding-left: 0px;
@@ -73,6 +73,9 @@
 .about-titel {
   font-size: 20px;
   line-height: 1.2;
+}
+.about-text {
+  font-weight: 400;
 }
 .about-item:before {
   display: block;
@@ -123,11 +126,15 @@
   width: 100%;
   flex-wrap: nowrap;
   row-gap: none;
-  gap: 65px;
+  gap: 120px;
+  margin: 0;
+  padding: 0;
 }
 .footer{
-padding-left: 84px;
+margin: 0;
+padding-left: 156px;
 }
+
 .container-footer:last-child{
   gap: none;
 }

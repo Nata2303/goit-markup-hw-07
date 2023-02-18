@@ -189,6 +189,7 @@ row-gap: 72px;
   }
   .footer-social-titel {
     margin: 0;
+    margin-bottom: 16px;
   }
   .subscribe {
     width: 453px;
