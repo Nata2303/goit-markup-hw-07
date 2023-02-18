@@ -18,6 +18,12 @@
 .mob-menu-open {
   margin-left: auto;
 }
+.mob-soc-list {
+  width: 320px;
+  height: 40px;
+display: flex;
+gap: 56px;
+}
   .hero-container {
     max-width: 100%;
   }
@@ -47,4 +53,7 @@
     justify-content: center;
     gap: 72px;
   }
+  .subscribe {
+  width: 320px;
+}
 }

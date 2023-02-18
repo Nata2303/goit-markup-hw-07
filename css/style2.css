@@ -101,7 +101,7 @@ header {
 .btn-mob-menu-close{
     width: 24px;
     height: 24px;
-    margin-left: 280px;
+    margin-left: 270px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     background: #E7E9FC;
@@ -201,8 +201,10 @@ header {
 }
 
 .mob-soc-list {
+    width: 300px;
+    height: 40px;
   display: flex;
-  gap: 56px;
+  gap: 50px;
 }
 .menu-open-icon{
     fill:var(--titel-brand-color--)
@@ -345,7 +347,7 @@ margin-bottom: 0px;
 .about-text {
   line-height: 1.5;
   letter-spacing: 0.02em;
-  font-weight: 400;
+  font-weight: 500;
   text-align: justify;
   color: var(--titel-brand-color--);
   margin: 0;
@@ -542,7 +544,7 @@ margin-bottom: 0px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #e7e9fc;
-  text-align: center;
+  text-align: start;
   width: 264px;
   height: 72px;
   padding: 0;
@@ -633,18 +635,21 @@ margin-bottom: 0px;
   text-align: center;
 }
 .subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
   width: 100%;
+}
+.subscribe-wrap{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    row-gap: 16px;
+    justify-content: center;
 }
 .titel-subscribe {
   margin-bottom: 16px;
   text-align: center;
-}
-.subscribe-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  row-gap: 16px;
 }
 .input-subscribe {
   width: 264px;
@@ -806,6 +811,7 @@ margin-bottom: 0px;
   top: 0;
   opacity: 1;
   transition: opacity 250ms var(--transition-timing-function--);
+  overflow-y: auto;
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -824,6 +830,7 @@ margin-bottom: 0px;
   transform: translate(-50%, -50%) scale(1);
   padding: 24px;
   transition: transform 250ms var(--transition-timing-function--);
+  /* overflow-y: auto; */
 }
 .backdrop.is-hidden.modal {
   transform: translate(-50%, -50%) scale(0, 9);

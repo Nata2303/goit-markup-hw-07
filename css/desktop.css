@@ -1,12 +1,15 @@
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1168px;
+    max-width: 1158px;
+    padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   }
   .mini-container {
-    max-width: 1168px;
+    max-width: 1158px;
   }
   .container.flex {
-    max-width: 1168px;
+    max-width: 1158px;
   }
   .section {
     padding: 120px 0;
@@ -31,6 +34,10 @@
         align-items: center;
         gap: 40px;
         justify-content: flex-end;
+      }
+      .contakt-item {
+        font-size: 16px;
+        line-height: 1.5;
       }
   .hero-container {
     max-width: 100%;
@@ -116,10 +123,13 @@
   width: 100%;
   flex-wrap: nowrap;
   row-gap: none;
-  gap: 80px;
+  gap: 65px;
 }
-.footer-conteiner{
-  margin-right: 40px;
+.footer{
+padding-left: 84px;
+}
+.container-footer:last-child{
+  gap: none;
 }
 .subscribe{
   width: 453px;
