@@ -210,4 +210,21 @@ row-gap: 72px;
     min-height: 90%;
     overflow-y: auto;
   }
+  .btn-list{
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+  }
+  .btn-item {
+    padding: 12px 24px;
+  }
+  .item {
+    width: calc((100% - 24px) / 2);
+}
+.menu-list {
+  justify-content: flex-start;
+}
+.item img{
+  width: 356px;
+}
 }

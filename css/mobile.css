@@ -56,4 +56,13 @@ gap: 56px;
   .subscribe {
   width: 320px;
 }
+.btn-list {
+  width: 320px;
+}
+.item {
+    width: 396px;
+}
+.item img{
+  width: 396px;
+}
 }
